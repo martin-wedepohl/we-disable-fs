@@ -3,8 +3,8 @@ Contributors: mwedepohl
 Donate link: https://paypal.me/martinwedepohl
 Tags: block editor, fullscreen, disable
 Requires at least: 5.3
-Tested up to: 5.5.1
-Stable tag: 1.0.5
+Tested up to: 5.6.1
+Stable tag: 1.0.6
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -49,6 +49,10 @@ No, it won't do anything on older versions and no guarenteee that it won't break
 3. I will endevor to resolve issues as soon as time permits
 
 == Changelog ==
+
+= 1.0.6 =
+February 5, 2021
+* Tested with WordPress Version 5.6.1
 
 = 1.0.5 =
 October 24, 2020
