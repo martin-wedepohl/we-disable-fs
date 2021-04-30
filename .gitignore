@@ -1,2 +1,2 @@
 .vscode
-we-disable-fs.code-workspace
+*.code-workspace

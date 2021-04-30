@@ -2,16 +2,16 @@
 /**
  * Disable WordPress Block Editor Fullscreen Mode
  *
- * @package           WEDisableFS
- * @author            Martin Wedepohl
- * @copyright         2020 Wedepohl Engineering
- * @license           GPL-2.0-or-later
+ * @package   WEDisableFS
+ * @author    Martin Wedepohl <martin@wedepohlengineering.com>
+ * @copyright 2020 Wedepohl Engineering
+ * @license   http://www.gnu.org/licenses/gpl-2.0.txt GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       Disable Block Editor Fullscreen
  * Plugin URI:        https://github.com/martin-wedepohl/we-disable-fs
  * Description:       Disable the WordPress Block Editor Fullscreen Mode which is enabled by default.
- * Version:           1.0.6
+ * Version:           1.0.7
  * Requires at least: 5.3
  * Requires PHP:      5.6
  * Author:            Martin Wedepohl
