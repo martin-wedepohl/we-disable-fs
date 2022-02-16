@@ -1,4 +1,4 @@
-<?php
+<?php    // phpcs:ignore
 /**
  * Disable WordPress Block Editor Fullscreen Mode
  *
@@ -11,7 +11,7 @@
  * Plugin Name:       Disable Block Editor Fullscreen
  * Plugin URI:        https://github.com/martin-wedepohl/we-disable-fs
  * Description:       Disable the WordPress Block Editor Fullscreen Mode which is enabled by default.
- * Version:           1.0.8
+ * Version:           1.0.9
  * Requires at least: 5.3
  * Requires PHP:      5.6
  * Author:            Martin Wedepohl
@@ -55,9 +55,9 @@ if ( ! class_exists( 'WEDisableFS' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public static function init() {
+		public function init() {
 
-			add_action( 'enqueue_block_editor_assets', array( 'WEDisableFS', 'disable_editor_fullscreen' ) );
+			add_action( 'enqueue_block_editor_assets', array( $this, 'disable_editor_fullscreen' ) );
 
 		}
 
@@ -69,7 +69,7 @@ if ( ! class_exists( 'WEDisableFS' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public static function disable_editor_fullscreen() {
+		public function disable_editor_fullscreen() {
 
 			$script = "window.onload = function() { const isFullscreenMode = wp.data.select( 'core/edit-post' ).isFeatureActive( 'fullscreenMode' ); if ( isFullscreenMode ) { wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'fullscreenMode' ); } }";
 			wp_add_inline_script( 'wp-blocks', $script );
@@ -77,6 +77,7 @@ if ( ! class_exists( 'WEDisableFS' ) ) {
 		}
 	}
 
-	WEDisableFS::init();
+	$wedfs = new WEDisableFS();
+	$wedfs->init();
 
 }
